@@ -68,3 +68,9 @@ for CUT_index_r = Tr + Gr + 1:(mapSize_r - (Tr + Gr))
 end
 ```
 
+### Selection of training and guard cells
+
+This is basically a tuning process. The window pattern that is used in the udacity content for 2D CFAR is used. I think that the offset value is crucial to suppress the unwanted noise.
+
+### Suppression of cells at the borders
+The iteration process does not take into account cells that the window can not accomodate on. Those cells values are left to zero.
